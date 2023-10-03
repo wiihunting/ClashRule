@@ -1,77 +1,76 @@
 [custom]
-;²»ÒªËæÒâ¸Ä±ä¹Ø¼ü×Ö£¬·ñÔò»áµ¼ÖÂ³ö´í
-;acl4SSR¹æÔò
+;ä¸è¦éšæ„æ”¹å˜å…³é”®å­—ï¼Œå¦åˆ™ä¼šå¯¼è‡´å‡ºé”™
+;acl4SSRè§„åˆ™
 
-;È¥¹ã¸æ£ºÖ§³Ö
-;×Ô¶¯²âËÙ£ºÖ§³Ö
-;Î¢Èí·ÖÁ÷£ºÖ§³Ö
-;Æ»¹û·ÖÁ÷£ºÖ§³Ö
-;ÔöÇ¿ÖĞ¹úIP¶Î£ºÖ§³Ö
-;ÔöÇ¿¹úÍâGFW£ºÖ§³Ö
-;ËùÓĞÓÎÏ·£º²»Ö§³Ö
+;å»å¹¿å‘Šï¼šæ”¯æŒ
+;è‡ªåŠ¨æµ‹é€Ÿï¼šæ”¯æŒ
+;å¾®è½¯åˆ†æµï¼šæ”¯æŒ
+;è‹¹æœåˆ†æµï¼šæ”¯æŒ
+;å¢å¼ºä¸­å›½IPæ®µï¼šæ”¯æŒ
+;å¢å¼ºå›½å¤–GFWï¼šæ”¯æŒ
 
-;ÉèÖÃ¹æÔò±êÖ¾Î»
-ruleset=? È«ÇòÖ±Á¬,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
-;ruleset=? È«ÇòÖ±Á¬,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
-ruleset=? ¹ã¸æÀ¹½Ø,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-ruleset=? Ó¦ÓÃ¾»»¯,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
-ruleset=? AdBlock,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list
-ruleset=? AdBlock,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list
-ruleset=?? ÒşË½·À»¤,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list
-ruleset=? ¹È¸èFCM,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
-ruleset=? È«ÇòÖ±Á¬,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
-ruleset=?? Î¢ÈíÔÆÅÌ,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
-ruleset=?? Î¢Èí·şÎñ,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
-ruleset=? Æ»¹û·şÎñ,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
-ruleset=? OpenAi,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
-ruleset=? ÍøÒ×ÒôÀÖ,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEaseMusic.list
-ruleset=? ÓÍ¹ÜÊÓÆµ,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
-ruleset=? ÄÎ·ÉÊÓÆµ,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
-ruleset=? µç±¨ÏûÏ¢,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
-ruleset=? ßÙÁ¨ßÙÁ¨,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
-ruleset=? ßÙÁ¨ßÙÁ¨,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
-ruleset=? ¹úÄÚÃ½Ìå,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
-ruleset=? ¹úÍâÃ½Ìå,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
-ruleset=? ½ÚµãÑ¡Ôñ,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
-;ruleset=? È«ÇòÖ±Á¬,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
-ruleset=? È«ÇòÖ±Á¬,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
-ruleset=? È«ÇòÖ±Á¬,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
-ruleset=? È«ÇòÖ±Á¬,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
-;ruleset=? È«ÇòÖ±Á¬,[]GEOIP,LAN
-ruleset=? È«ÇòÖ±Á¬,[]GEOIP,CN
-ruleset=? Â©ÍøÖ®Óã,[]FINAL
-;ÉèÖÃ¹æÔò±êÖ¾Î»
+;è®¾ç½®è§„åˆ™æ ‡å¿—ä½
+ruleset=ğŸ¯ å…¨çƒç›´è¿,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+ruleset=ğŸ¯ å…¨çƒç›´è¿,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+ruleset=ğŸ›‘ å¹¿å‘Šæ‹¦æˆª,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+ruleset=ğŸƒ åº”ç”¨å‡€åŒ–,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+ruleset=ğŸ† AdBlock,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list
+ruleset=ğŸ† AdBlock,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list
+ruleset=ğŸ›¡ï¸ éšç§é˜²æŠ¤,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list
+ruleset=ğŸ“¢ è°·æ­ŒFCM,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+ruleset=ğŸ¯ å…¨çƒç›´è¿,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+ruleset=â“‚ï¸ å¾®è½¯äº‘ç›˜,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
+ruleset=â“‚ï¸ å¾®è½¯æœåŠ¡,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+ruleset=ğŸ è‹¹æœæœåŠ¡,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+ruleset=ğŸ“² ç”µæŠ¥æ¶ˆæ¯,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+ruleset=ğŸ’¬ OpenAi,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
+ruleset=ğŸ¶ ç½‘æ˜“éŸ³ä¹,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEaseMusic.list
+ruleset=ğŸ“¹ æ²¹ç®¡è§†é¢‘,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+ruleset=ğŸ¥ å¥ˆé£è§†é¢‘,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
+ruleset=ğŸ“º å“”å“©å“”å“©,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
+ruleset=ğŸ“º å“”å“©å“”å“©,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
+ruleset=ğŸŒ å›½å†…åª’ä½“,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
+ruleset=ğŸŒ å›½å¤–åª’ä½“,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+ruleset=ğŸš€ èŠ‚ç‚¹é€‰æ‹©,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+;ruleset=ğŸ¯ å…¨çƒç›´è¿,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
+ruleset=ğŸ¯ å…¨çƒç›´è¿,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+ruleset=ğŸ¯ å…¨çƒç›´è¿,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+ruleset=ğŸ¯ å…¨çƒç›´è¿,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+;ruleset=ğŸ¯ å…¨çƒç›´è¿,[]GEOIP,LAN
+ruleset=ğŸ¯ å…¨çƒç›´è¿,[]GEOIP,CN
+ruleset=ğŸŸ æ¼ç½‘ä¹‹é±¼,[]FINAL
+;è®¾ç½®è§„åˆ™æ ‡å¿—ä½
 
-;ÉèÖÃ·Ö×é±êÖ¾Î»
-custom_proxy_group=? ½ÚµãÑ¡Ôñ`select`[]?? ×Ô¶¯Ñ¡Ôñ`[]? ¹ÊÕÏ×ªÒÆ`[]? ¸ºÔØ¾ùºâ`[]?? Ïã¸Û½Úµã`[]?? Ê¨³Ç½Úµã`[]?? ÈÕ±¾½Úµã`[]?? ÃÀ¹ú½Úµã`[]? ÊÖ¶¯ÇĞ»»`[]DIRECT
-custom_proxy_group=? ÊÖ¶¯ÇĞ»»`select`.*
-custom_proxy_group=?? ×Ô¶¯Ñ¡Ôñ`url-test`.*`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=? ¹ÊÕÏ×ªÒÆ`fallback`.*`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=? ¸ºÔØ¾ùºâ`load-balance`.*`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=? µç±¨ÏûÏ¢`select`[]? ½ÚµãÑ¡Ôñ`[]?? ×Ô¶¯Ñ¡Ôñ`[]?? Ê¨³Ç½Úµã`[]?? Ïã¸Û½Úµã`[]?? ÈÕ±¾½Úµã`[]?? ÃÀ¹ú½Úµã`[]? ÊÖ¶¯ÇĞ»»`[]DIRECT
-custom_proxy_group=? OpenAi`select`[]? ½ÚµãÑ¡Ôñ`[]?? ×Ô¶¯Ñ¡Ôñ`[]?? Ê¨³Ç½Úµã`[]?? Ïã¸Û½Úµã`[]?? ÈÕ±¾½Úµã`[]?? ÃÀ¹ú½Úµã`[]? ÊÖ¶¯ÇĞ»»`[]DIRECT
-custom_proxy_group=? ÓÍ¹ÜÊÓÆµ`select`[]? ½ÚµãÑ¡Ôñ`[]?? ×Ô¶¯Ñ¡Ôñ`[]?? Ê¨³Ç½Úµã`[]?? Ïã¸Û½Úµã`[]?? ÈÕ±¾½Úµã`[]?? ÃÀ¹ú½Úµã`[]? ÊÖ¶¯ÇĞ»»`[]DIRECT
-custom_proxy_group=? ÄÎ·ÉÊÓÆµ`select`[]? ÄÎ·É½Úµã`[]? ½ÚµãÑ¡Ôñ`[]?? ×Ô¶¯Ñ¡Ôñ`[]?? Ê¨³Ç½Úµã`[]?? Ïã¸Û½Úµã`[]?? ÈÕ±¾½Úµã`[]?? ÃÀ¹ú½Úµã`[]? ÊÖ¶¯ÇĞ»»`[]DIRECT
-custom_proxy_group=? ßÙÁ¨ßÙÁ¨`select`[]? È«ÇòÖ±Á¬`[]?? Ïã¸Û½Úµã
-custom_proxy_group=? ¹úÍâÃ½Ìå`select`[]? ½ÚµãÑ¡Ôñ`[]?? ×Ô¶¯Ñ¡Ôñ`[]?? Ïã¸Û½Úµã`[]?? Ê¨³Ç½Úµã`[]?? ÈÕ±¾½Úµã`[]?? ÃÀ¹ú½Úµã`[]? ÊÖ¶¯ÇĞ»»`[]DIRECT
-custom_proxy_group=? ¹úÄÚÃ½Ìå`select`[]DIRECT`[]?? Ïã¸Û½Úµã`[]?? Ê¨³Ç½Úµã`[]?? ÈÕ±¾½Úµã`[]? ÊÖ¶¯ÇĞ»»
-custom_proxy_group=? ¹È¸èFCM`select`[]DIRECT`[]? ½ÚµãÑ¡Ôñ`[]?? ÃÀ¹ú½Úµã`[]?? Ïã¸Û½Úµã`[]?? Ê¨³Ç½Úµã`[]?? ÈÕ±¾½Úµã`[]? ÊÖ¶¯ÇĞ»»
-custom_proxy_group=?? Î¢ÈíÔÆÅÌ`select`[]DIRECT`[]? ½ÚµãÑ¡Ôñ`[]?? ÃÀ¹ú½Úµã`[]?? Ïã¸Û½Úµã`[]?? Ê¨³Ç½Úµã`[]?? ÈÕ±¾½Úµã`[]? ÊÖ¶¯ÇĞ»»
-custom_proxy_group=?? Î¢Èí·şÎñ`select`[]DIRECT`[]? ½ÚµãÑ¡Ôñ`[]?? ÃÀ¹ú½Úµã`[]?? Ïã¸Û½Úµã`[]?? Ê¨³Ç½Úµã`[]?? ÈÕ±¾½Úµã`[]? ÊÖ¶¯ÇĞ»»
-custom_proxy_group=? Æ»¹û·şÎñ`select`[]DIRECT`[]? ½ÚµãÑ¡Ôñ`[]?? ÃÀ¹ú½Úµã`[]?? Ïã¸Û½Úµã`[]?? Ê¨³Ç½Úµã`[]?? ÈÕ±¾½Úµã`[]? ÊÖ¶¯ÇĞ»»
-custom_proxy_group=? ÍøÒ×ÒôÀÖ`select`[]DIRECT`[]? ½ÚµãÑ¡Ôñ`[]?? ×Ô¶¯Ñ¡Ôñ`(ÍøÒ×|ÒôÀÖ|½âËø|Music|NetEase)
-custom_proxy_group=? È«ÇòÖ±Á¬`select`[]DIRECT`[]? ½ÚµãÑ¡Ôñ`[]?? ×Ô¶¯Ñ¡Ôñ
-custom_proxy_group=? ¹ã¸æÀ¹½Ø`select`[]REJECT`[]DIRECT
-custom_proxy_group=? Ó¦ÓÃ¾»»¯`select`[]REJECT`[]DIRECT
-custom_proxy_group=? AdBlock`select`[]REJECT`[]DIRECT
-custom_proxy_group=?? ÒşË½·À»¤`select`[]REJECT`[]DIRECT
-custom_proxy_group=? Â©ÍøÖ®Óã`select`[]? ½ÚµãÑ¡Ôñ`[]?? ×Ô¶¯Ñ¡Ôñ`[]DIRECT`[]?? Ïã¸Û½Úµã`[]?? Ê¨³Ç½Úµã`[]?? ÈÕ±¾½Úµã`[]?? ÃÀ¹ú½Úµã`[]? ÊÖ¶¯ÇĞ»»
-custom_proxy_group=?? Ïã¸Û½Úµã`url-test`(¸Û|HK|hk|Hong Kong|HongKong|hongkong)`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=?? ÈÕ±¾½Úµã`url-test`(ÈÕ±¾|´¨ÈÕ|¶«¾©|´óÚæ|ÈªÈÕ|ˆÎÓñ|»¦ÈÕ|ÉîÈÕ|[^-]ÈÕ|JP|Japan)`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=?? ÃÀ¹ú½Úµã`url-test`(ÃÀ|²¨ÌØÀ¼|´ïÀ­Ë¹|¶íÀÕ¸Ô|·ï»Ë³Ç|·ÑÀûÃÉ|¹è¹È|À­Ë¹Î¬¼ÓË¹|ÂåÉ¼í¶|Ê¥ºÎÈû|Ê¥¿ËÀ­À­|Î÷ÑÅÍ¼|Ö¥¼Ó¸ç|US|United States)`http://www.gstatic.com/generate_204`300,,150
-custom_proxy_group=?? Ê¨³Ç½Úµã`url-test`(ĞÂ¼ÓÆÂ|ÆÂ|Ê¨³Ç|SG|Singapore)`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=? ÄÎ·É½Úµã`select`(NF|ÄÎ·É|½âËø|Netflix|NETFLIX|Media)
-;ÉèÖÃ·Ö×é±êÖ¾Î»
+;è®¾ç½®åˆ†ç»„æ ‡å¿—ä½
+custom_proxy_group=ğŸš€ èŠ‚ç‚¹é€‰æ‹©`select`[]â™»ï¸ è‡ªåŠ¨é€‰æ‹©`[]ğŸ”¯ æ•…éšœè½¬ç§»`[]ğŸ”® è´Ÿè½½å‡è¡¡`[]ğŸ‡­ğŸ‡° é¦™æ¸¯èŠ‚ç‚¹`[]ğŸ‡¸ğŸ‡¬ ç‹®åŸèŠ‚ç‚¹`[]ğŸ‡¯ğŸ‡µ æ—¥æœ¬èŠ‚ç‚¹`[]ğŸ‡ºğŸ‡² ç¾å›½èŠ‚ç‚¹`[]ğŸš€ æ‰‹åŠ¨åˆ‡æ¢`[]DIRECT
+custom_proxy_group=ğŸš€ æ‰‹åŠ¨åˆ‡æ¢`select`.*
+custom_proxy_group=â™»ï¸ è‡ªåŠ¨é€‰æ‹©`url-test`.*`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=ğŸ”¯ æ•…éšœè½¬ç§»`fallback`.*`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=ğŸ”® è´Ÿè½½å‡è¡¡`load-balance`.*`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=ğŸ“² ç”µæŠ¥æ¶ˆæ¯`select`[]ğŸš€ èŠ‚ç‚¹é€‰æ‹©`[]â™»ï¸ è‡ªåŠ¨é€‰æ‹©`[]ğŸ‡¸ğŸ‡¬ ç‹®åŸèŠ‚ç‚¹`[]ğŸ‡­ğŸ‡° é¦™æ¸¯èŠ‚ç‚¹`[]ğŸ‡¯ğŸ‡µ æ—¥æœ¬èŠ‚ç‚¹`[]ğŸ‡ºğŸ‡² ç¾å›½èŠ‚ç‚¹`[]ğŸš€ æ‰‹åŠ¨åˆ‡æ¢`[]DIRECT
+custom_proxy_group=ğŸ’¬ OpenAi`select`[]ğŸš€ èŠ‚ç‚¹é€‰æ‹©`[]â™»ï¸ è‡ªåŠ¨é€‰æ‹©`[]ğŸ‡¸ğŸ‡¬ ç‹®åŸèŠ‚ç‚¹`[]ğŸ‡­ğŸ‡° é¦™æ¸¯èŠ‚ç‚¹`[]ğŸ‡¯ğŸ‡µ æ—¥æœ¬èŠ‚ç‚¹`[]ğŸ‡ºğŸ‡² ç¾å›½èŠ‚ç‚¹`[]ğŸš€ æ‰‹åŠ¨åˆ‡æ¢`[]DIRECT
+custom_proxy_group=ğŸ“¹ æ²¹ç®¡è§†é¢‘`select`[]ğŸš€ èŠ‚ç‚¹é€‰æ‹©`[]â™»ï¸ è‡ªåŠ¨é€‰æ‹©`[]ğŸ‡¸ğŸ‡¬ ç‹®åŸèŠ‚ç‚¹`[]ğŸ‡­ğŸ‡° é¦™æ¸¯èŠ‚ç‚¹`[]ğŸ‡¯ğŸ‡µ æ—¥æœ¬èŠ‚ç‚¹`[]ğŸ‡ºğŸ‡² ç¾å›½èŠ‚ç‚¹`[]ğŸš€ æ‰‹åŠ¨åˆ‡æ¢`[]DIRECT
+custom_proxy_group=ğŸ¥ å¥ˆé£è§†é¢‘`select`[]ğŸ¥ å¥ˆé£èŠ‚ç‚¹`[]ğŸš€ èŠ‚ç‚¹é€‰æ‹©`[]â™»ï¸ è‡ªåŠ¨é€‰æ‹©`[]ğŸ‡¸ğŸ‡¬ ç‹®åŸèŠ‚ç‚¹`[]ğŸ‡­ğŸ‡° é¦™æ¸¯èŠ‚ç‚¹`[]ğŸ‡¯ğŸ‡µ æ—¥æœ¬èŠ‚ç‚¹`[]ğŸ‡ºğŸ‡² ç¾å›½èŠ‚ç‚¹`[]ğŸš€ æ‰‹åŠ¨åˆ‡æ¢`[]DIRECT
+custom_proxy_group=ğŸ“º å“”å“©å“”å“©`select`[]ğŸ¯ å…¨çƒç›´è¿`[]ğŸ‡­ğŸ‡° é¦™æ¸¯èŠ‚ç‚¹
+custom_proxy_group=ğŸŒ å›½å¤–åª’ä½“`select`[]ğŸš€ èŠ‚ç‚¹é€‰æ‹©`[]â™»ï¸ è‡ªåŠ¨é€‰æ‹©`[]ğŸ‡­ğŸ‡° é¦™æ¸¯èŠ‚ç‚¹`[]ğŸ‡¸ğŸ‡¬ ç‹®åŸèŠ‚ç‚¹`[]ğŸ‡¯ğŸ‡µ æ—¥æœ¬èŠ‚ç‚¹`[]ğŸ‡ºğŸ‡² ç¾å›½èŠ‚ç‚¹`[]ğŸš€ æ‰‹åŠ¨åˆ‡æ¢`[]DIRECT
+custom_proxy_group=ğŸŒ å›½å†…åª’ä½“`select`[]DIRECT`[]ğŸ‡­ğŸ‡° é¦™æ¸¯èŠ‚ç‚¹`[]ğŸ‡¸ğŸ‡¬ ç‹®åŸèŠ‚ç‚¹`[]ğŸ‡¯ğŸ‡µ æ—¥æœ¬èŠ‚ç‚¹`[]ğŸš€ æ‰‹åŠ¨åˆ‡æ¢
+custom_proxy_group=ğŸ“¢ è°·æ­ŒFCM`select`[]DIRECT`[]ğŸš€ èŠ‚ç‚¹é€‰æ‹©`[]ğŸ‡ºğŸ‡² ç¾å›½èŠ‚ç‚¹`[]ğŸ‡­ğŸ‡° é¦™æ¸¯èŠ‚ç‚¹`[]ğŸ‡¸ğŸ‡¬ ç‹®åŸèŠ‚ç‚¹`[]ğŸ‡¯ğŸ‡µ æ—¥æœ¬èŠ‚ç‚¹`[]ğŸš€ æ‰‹åŠ¨åˆ‡æ¢
+custom_proxy_group=â“‚ï¸ å¾®è½¯äº‘ç›˜`select`[]DIRECT`[]ğŸš€ èŠ‚ç‚¹é€‰æ‹©`[]ğŸ‡ºğŸ‡² ç¾å›½èŠ‚ç‚¹`[]ğŸ‡­ğŸ‡° é¦™æ¸¯èŠ‚ç‚¹`[]ğŸ‡¸ğŸ‡¬ ç‹®åŸèŠ‚ç‚¹`[]ğŸ‡¯ğŸ‡µ æ—¥æœ¬èŠ‚ç‚¹`[]ğŸš€ æ‰‹åŠ¨åˆ‡æ¢
+custom_proxy_group=â“‚ï¸ å¾®è½¯æœåŠ¡`select`[]DIRECT`[]ğŸš€ èŠ‚ç‚¹é€‰æ‹©`[]ğŸ‡ºğŸ‡² ç¾å›½èŠ‚ç‚¹`[]ğŸ‡­ğŸ‡° é¦™æ¸¯èŠ‚ç‚¹`[]ğŸ‡¸ğŸ‡¬ ç‹®åŸèŠ‚ç‚¹`[]ğŸ‡¯ğŸ‡µ æ—¥æœ¬èŠ‚ç‚¹`[]ğŸš€ æ‰‹åŠ¨åˆ‡æ¢
+custom_proxy_group=ğŸ è‹¹æœæœåŠ¡`select`[]DIRECT`[]ğŸš€ èŠ‚ç‚¹é€‰æ‹©`[]ğŸ‡ºğŸ‡² ç¾å›½èŠ‚ç‚¹`[]ğŸ‡­ğŸ‡° é¦™æ¸¯èŠ‚ç‚¹`[]ğŸ‡¸ğŸ‡¬ ç‹®åŸèŠ‚ç‚¹`[]ğŸ‡¯ğŸ‡µ æ—¥æœ¬èŠ‚ç‚¹`[]ğŸš€ æ‰‹åŠ¨åˆ‡æ¢
+custom_proxy_group=ğŸ¶ ç½‘æ˜“éŸ³ä¹`select`[]DIRECT`[]ğŸš€ èŠ‚ç‚¹é€‰æ‹©`[]â™»ï¸ è‡ªåŠ¨é€‰æ‹©`(ç½‘æ˜“|éŸ³ä¹|è§£é”|Music|NetEase)
+custom_proxy_group=ğŸ¯ å…¨çƒç›´è¿`select`[]DIRECT`[]ğŸš€ èŠ‚ç‚¹é€‰æ‹©`[]â™»ï¸ è‡ªåŠ¨é€‰æ‹©
+custom_proxy_group=ğŸ›‘ å¹¿å‘Šæ‹¦æˆª`select`[]REJECT`[]DIRECT
+custom_proxy_group=ğŸƒ åº”ç”¨å‡€åŒ–`select`[]REJECT`[]DIRECT
+custom_proxy_group=ğŸ† AdBlock`select`[]REJECT`[]DIRECT
+custom_proxy_group=ğŸ›¡ï¸ éšç§é˜²æŠ¤`select`[]REJECT`[]DIRECT
+custom_proxy_group=ğŸŸ æ¼ç½‘ä¹‹é±¼`select`[]ğŸš€ èŠ‚ç‚¹é€‰æ‹©`[]â™»ï¸ è‡ªåŠ¨é€‰æ‹©`[]DIRECT`[]ğŸ‡­ğŸ‡° é¦™æ¸¯èŠ‚ç‚¹`[]ğŸ‡¸ğŸ‡¬ ç‹®åŸèŠ‚ç‚¹`[]ğŸ‡¯ğŸ‡µ æ—¥æœ¬èŠ‚ç‚¹`[]ğŸ‡ºğŸ‡² ç¾å›½èŠ‚ç‚¹`[]ğŸš€ æ‰‹åŠ¨åˆ‡æ¢
+custom_proxy_group=ğŸ‡­ğŸ‡° é¦™æ¸¯èŠ‚ç‚¹`url-test`(æ¸¯|HK|hk|Hong Kong|HongKong|hongkong)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=ğŸ‡¯ğŸ‡µ æ—¥æœ¬èŠ‚ç‚¹`url-test`(æ—¥æœ¬|å·æ—¥|ä¸œäº¬|å¤§é˜ª|æ³‰æ—¥|åŸ¼ç‰|æ²ªæ—¥|æ·±æ—¥|[^-]æ—¥|JP|Japan)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=ğŸ‡ºğŸ‡² ç¾å›½èŠ‚ç‚¹`url-test`(ç¾|æ³¢ç‰¹å…°|è¾¾æ‹‰æ–¯|ä¿„å‹’å†ˆ|å‡¤å‡°åŸ|è´¹åˆ©è’™|ç¡…è°·|æ‹‰æ–¯ç»´åŠ æ–¯|æ´›æ‰çŸ¶|åœ£ä½•å¡|åœ£å…‹æ‹‰æ‹‰|è¥¿é›…å›¾|èŠåŠ å“¥|US|United States)`http://www.gstatic.com/generate_204`300,,150
+custom_proxy_group=ğŸ‡¸ğŸ‡¬ ç‹®åŸèŠ‚ç‚¹`url-test`(æ–°åŠ å¡|å¡|ç‹®åŸ|SG|Singapore)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=ğŸ¥ å¥ˆé£èŠ‚ç‚¹`select`(NF|å¥ˆé£|è§£é”|Netflix|NETFLIX|Media)
+;è®¾ç½®åˆ†ç»„æ ‡å¿—ä½
 
 enable_rule_generator=true
 overwrite_original_rules=true
