@@ -3,8 +3,8 @@
 # 生成日期：2026-09-12
 # 说明：Shadowrocket 的 pre-matching、extended-matching 参数已移除
 # 说明：原始备注全部保留
-# 说明：外部 AI 规则集已加入 blackmatrix7 的 OpenAI、Claude、Anthropic、Gemini
-# 说明：本文件只保留上述外部列表未覆盖的规则，已被覆盖的已删除
+# 说明：外部 AI 规则集使用 blackmatrix7 的 OpenAI、Claude、Anthropic、Gemini
+# 说明：本文件只保留外部列表未覆盖的规则，已被覆盖的重复规则一律删除
 
 payload:
   # 代理规则 (自动选择 / AI / TWITTER / OnDemand)
@@ -13,18 +13,13 @@ payload:
 
   # AI
   # --- OpenAI / ChatGPT ---
-  - DOMAIN-KEYWORD,openai
   - DOMAIN-SUFFIX,sora.com
-  - DOMAIN-KEYWORD,openaicom-api
   # --- Claude / Anthropic ---
   - DOMAIN-SUFFIX,claudeusercontent.com
   # --- Google Gemini ---
   - DOMAIN-SUFFIX,aistudio.google.com
   - DOMAIN-SUFFIX,clients6.google.com
   - DOMAIN-SUFFIX,notebooklm.google.com
-  - DOMAIN-KEYWORD,generativelanguage
-  - DOMAIN-KEYWORD,colab
-  - DOMAIN-KEYWORD,developerprofiles
   # --- Microsoft Copilot ---
   - DOMAIN-SUFFIX,copilot.microsoft.com
   - DOMAIN-SUFFIX,bing.com
