@@ -1,0 +1,38 @@
+# 拦截规则引用清单
+# 生成日期：2026-09-12
+# 用法：把 rule-providers 下的内容合并到 FlClash 主配置的 rule-providers
+# 说明：原始备注全部保留
+# 说明：自定义规则改用 GitHub Raw 地址引用
+
+rule-providers:
+  # 拦截规则 (REJECT)
+  # 屏蔽网址
+  Ban_Custom:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/wiihunting/ClashRule/main/Clash_Ban_20260912.yaml
+    path: ./ruleset/Ban_Custom.yaml
+    interval: 86400
+
+  # DNS 防泄露，参考https://github.com/LingJingMaster/Shadowrocket-Rules
+  Ban_BlockHttpDNS:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BlockHttpDNS/BlockHttpDNS.yaml
+    path: ./ruleset/Ban_BlockHttpDNS.yaml
+    interval: 86400
+
+  # Reject
+  # BanAD.list已通过 去广告模块 屏蔽
+  # RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list,REJECT
+  # RULE-SET,https://gist.githubusercontent.com/wiihunting/d40412bd28a019e0fa69020a2ae5a610/raw/Blocked_Shadowrocket.list,REJECT
+  # RULE-SET,https://raw.githubusercontent.com/iab0x00/ProxyRules/main/Rule/Block.txt,REJECT
+  Ban_Block:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/iab0x00/ProxyRules/main/Rule/Block.txt
+    path: ./ruleset/Ban_Block.yaml
+    interval: 86400
