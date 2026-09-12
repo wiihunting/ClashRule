@@ -1,0 +1,50 @@
+# AI 规则引用清单
+# 生成日期：2026-09-12
+# 用法：把 rule-providers 下的内容合并到 FlClash 主配置的 rule-providers
+# 说明：自定义 AI 规则 + blackmatrix7 的 OpenAI、Claude、Anthropic、Gemini 外部规则
+# 说明：MoreAiRules.list 已合并进自定义文件，不再单独引用
+# 说明：自定义规则改用 GitHub Raw 地址引用
+
+rule-providers:
+  # 代理规则 (自动选择 / AI / TWITTER / OnDemand)
+  # 本文件只包含其中 AI 的规则
+  AI_Custom:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/wiihunting/ClashRule/main/Clash_AI_20260912.yaml
+    path: ./ruleset/AI_Custom.yaml
+    interval: 86400
+
+  # proxy RULE-SET
+  AI_OpenAI:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
+    path: ./ruleset/AI_OpenAI.yaml
+    interval: 86400
+
+  AI_Claude:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml
+    path: ./ruleset/AI_Claude.yaml
+    interval: 86400
+
+  AI_Anthropic:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Anthropic/Anthropic.yaml
+    path: ./ruleset/AI_Anthropic.yaml
+    interval: 86400
+
+  AI_Gemini:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml
+    path: ./ruleset/AI_Gemini.yaml
+    interval: 86400
