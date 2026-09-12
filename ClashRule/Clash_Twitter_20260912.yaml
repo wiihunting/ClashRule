@@ -1,0 +1,10 @@
+# 自定义 Twitter 规则
+# 来源：shadowrocket_202609.conf
+# 生成日期：2026-09-12
+# 说明：原始备注全部保留
+
+payload:
+  # Twitter
+  - DOMAIN-SUFFIX,twimg.com
+  - DOMAIN-SUFFIX,twitter.com
+  - DOMAIN-SUFFIX,x.com
