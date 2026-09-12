@@ -1,0 +1,86 @@
+# 自动代理规则
+# 来源：shadowrocket_202609.conf
+# 生成日期：2026-09-12
+# 说明：仅整理策略为“自动选择”的自定义规则；外部规则集另行引用
+# 说明：# 混合规则分组 (保留不拆分) 已按用户要求拆分，本文件保留其中“自动选择”的规则
+# 说明：Tailscale 按用户要求暂不处理
+# 说明：OnDemand、Nippon 为独立类别，不并入本文件
+
+payload:
+  # 代理规则 (自动选择 / AI / TWITTER / OnDemand)
+
+  - DOMAIN-SUFFIX,githubusercontent.com
+  # > Feedly 核心同步域名强制走稳定代理
+  - DOMAIN-SUFFIX,feedly.com
+  - DOMAIN-SUFFIX,feedly.network
+  - DOMAIN,cloud.feedly.com
+
+  # Acast 不明白播客音频托管与分发
+  - DOMAIN-SUFFIX,acast.com
+  - DOMAIN-SUFFIX,acast.io
+  - DOMAIN-SUFFIX,pippa.io
+
+  # Apple Podcasts 苹果播客官方目录检索、排行榜及语音字幕 API 加速
+  # DOMAIN-SUFFIX,podcasts.apple.com,自动选择
+  # Apple Podcasts 苹果播客专属特定 API 检索接口加速
+  - DOMAIN,amp-api.podcasts.apple.com
+  - DOMAIN,amp-api.media.apple.com
+
+  # 纽约时报（The New York Times）官方主站、短网址及 CDN 静态资源加速
+  - DOMAIN-SUFFIX,nytimes.com
+  - DOMAIN-SUFFIX,nyt.com
+  - DOMAIN-SUFFIX,nyt.net
+
+  # playno1
+  - DOMAIN-SUFFIX,playno1.com
+  - DOMAIN-SUFFIX,xuite.net
+
+  # 其他
+  - DOMAIN-SUFFIX,appcenter.ms
+
+  # 不明白播客及其他
+  - DOMAIN-SUFFIX,buzzsprout.com
+
+  # Custom Proxy
+  # GitHub
+  - DOMAIN-SUFFIX,atom.io
+  - DOMAIN-SUFFIX,dependabot.com
+  - DOMAIN-SUFFIX,ghcr.io
+  - DOMAIN-SUFFIX,git.io
+  - DOMAIN-SUFFIX,github-atom-io-herokuapp-com.freetls.fastly.net
+  - DOMAIN-SUFFIX,github-avatars.oss-cn-hongkong.aliyuncs.com
+  - DOMAIN-SUFFIX,github-cloud.s3.amazonaws.com
+  - DOMAIN-SUFFIX,github.blog
+  - DOMAIN-SUFFIX,github.com
+  - DOMAIN-SUFFIX,github.community
+  - DOMAIN-SUFFIX,github.dev
+  - DOMAIN-SUFFIX,github.io
+  - DOMAIN-SUFFIX,githubapp.com
+  - DOMAIN-SUFFIX,githubassets.com
+  - DOMAIN-SUFFIX,githubcopilot.com
+  - DOMAIN-SUFFIX,githubhackathon.com
+  - DOMAIN-SUFFIX,githubnext.com
+  - DOMAIN-SUFFIX,githubpreview.dev
+  - DOMAIN-SUFFIX,githubstatus.com
+  - DOMAIN-SUFFIX,githubuniverse.com
+  - DOMAIN-SUFFIX,myoctocat.com
+  - DOMAIN-SUFFIX,npm.community
+  - DOMAIN-SUFFIX,npmjs.com
+  - DOMAIN-SUFFIX,npmjs.org
+  - DOMAIN-SUFFIX,opensource.guide
+  - DOMAIN-SUFFIX,rawgit.com
+  - DOMAIN-SUFFIX,rawgithub.com
+  - DOMAIN-SUFFIX,repo.new
+  - DOMAIN-SUFFIX,thegithubshop.com
+  - DOMAIN-KEYWORD,github
+
+  # 混合规则分组 (保留不拆分)
+  # 按用户要求拆分到自动代理类别
+  # Cloudflare
+  - DOMAIN,dash.cloudflare.com
+
+  # Tailscale
+  # 按用户要求暂不迁移，以下原规则仅保留备注：
+  # DOMAIN-SUFFIX,tailscale.com,自动选择,extended-matching
+  # DOMAIN-SUFFIX,ts.net,TAILSCALE
+  # IP-CIDR,100.64.0.0/10,TAILSCALE,no-resolve
