@@ -1,0 +1,17 @@
+# OnDemand 规则引用清单
+# 生成日期：2026-09-12
+# 用法：把 rule-providers 下的内容合并到 FlClash 主配置的 rule-providers
+# 说明：使用用户指定的固定版本地址；原始备注全部保留
+# 说明：本文件只有外部规则，没有本地文件引用
+
+rule-providers:
+  # 将中国数字时代强制分流到 OnDemand 代理分组
+  # RULE-SET,https://gist.githubusercontent.com/wiihunting/6aa5527e00f4ec08d71c4ee0b9688587/raw/OnDemand.list,OnDemand
+  # 内容：javdb
+  OnDemand_List:
+    type: http
+    behavior: classical
+    format: text
+    url: https://gist.githubusercontent.com/wiihunting/6aa5527e00f4ec08d71c4ee0b9688587/raw/f5507c8ec26c8fd8209b09e4310d016947de206e/OnDemand.list
+    path: ./ruleset/OnDemand_List.yaml
+    interval: 86400
