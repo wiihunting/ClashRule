@@ -1,0 +1,45 @@
+# 自定义 AI 规则
+# 来源：shadowrocket_202609.conf
+# 生成日期：2026-09-12
+# 说明：Shadowrocket 的 pre-matching、extended-matching 参数已移除
+# 说明：原始备注全部保留
+# 说明：当前配置中没有需要引用的外部 AI 规则集
+
+payload:
+  # 代理规则 (自动选择 / AI / TWITTER / OnDemand)
+  # Gemini地址定位
+  - DOMAIN-SUFFIX,googleapis.com
+
+  # AI
+  # --- OpenAI / ChatGPT ---
+  - DOMAIN-SUFFIX,ai.com
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net
+  - DOMAIN,openaiapi-site.azureedge.net
+  - DOMAIN-SUFFIX,identrust.com
+  - DOMAIN-SUFFIX,auth0.com
+  - DOMAIN-KEYWORD,openai
+  - DOMAIN-SUFFIX,oaistatic.com
+  - DOMAIN-SUFFIX,oaiusercontent.com
+  - DOMAIN-SUFFIX,chatgpt.com
+  - DOMAIN-SUFFIX,sora.com
+  - DOMAIN-KEYWORD,openaicom-api
+  # --- Claude / Anthropic ---
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,claudeusercontent.com
+  # --- Google Gemini ---
+  - DOMAIN-SUFFIX,gemini.google.com
+  - DOMAIN-SUFFIX,bard.google.com
+  - DOMAIN-SUFFIX,generativelanguage.googleapis.com
+  - DOMAIN-SUFFIX,aistudio.google.com
+  - DOMAIN-SUFFIX,deepmind.com
+  # --- Microsoft Copilot ---
+  - DOMAIN-SUFFIX,copilot.microsoft.com
+  - DOMAIN-SUFFIX,bing.com
+  # --- 其他 AI 社区与聚合平台 ---
+  - DOMAIN-SUFFIX,midjourney.com
+  - DOMAIN-SUFFIX,civitai.com
+  - DOMAIN-SUFFIX,huggingface.co
+  - DOMAIN-SUFFIX,poe.com
+  - DOMAIN-SUFFIX,perplexity.ai
