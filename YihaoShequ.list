@@ -1,0 +1,171 @@
+# 来源：https://raw.githubusercontent.com/wiihunting/Shadowrocket/refs/heads/main/YiHaoSheQu_20260903
+# 提取说明：仅保留原文件中的 REJECT 规则，DIRECT 等分流规则已忽略。
+# 格式调整：已移除 Shadowrocket 专用参数 pre-matching、extended-matching。
+
+# ══════════════════════════════════════════════
+# 二、拦截区（REJECT）—— 2.1 沿用 v4.0，2.2 源自日志1，2.3 源自日志2
+# ══════════════════════════════════════════════
+
+# ─── 2.1 原有规则（v4.0 沿用，勿删）─────────────
+
+# > 字节跳动相关广告及 SDK
+# 穿山甲广告资源 CDN
+DOMAIN-SUFFIX,bytescm.com,REJECT
+# 今日头条广告与 SDK
+DOMAIN-KEYWORD,toutiao.com,REJECT
+# 头条系广告衍生域名
+DOMAIN-KEYWORD,toutiao-,REJECT
+
+# > 百度对象存储广告缓存
+# 百度 BOS 上的广告素材缓存
+DOMAIN-KEYWORD,bcebos,REJECT
+
+# > 广告联盟与联盟分发 SDK
+# 广告联盟分发服务
+DOMAIN-SUFFIX,adn-plus.com.cn,REJECT
+# 倍孜广告 SDK
+DOMAIN-SUFFIX,beizi.biz,REJECT
+# 广告联盟分发节点
+DOMAIN-SUFFIX,puata.info,REJECT
+# 广告安全监测 SDK
+DOMAIN-SUFFIX,secu100.net,REJECT
+# 广告聚合分发服务
+DOMAIN-SUFFIX,hubcloud.com.cn,REJECT
+# 友盟统计与广告 SDK
+DOMAIN-SUFFIX,umeng.com,REJECT
+# 友盟云服务（广告数据回传）
+DOMAIN-SUFFIX,umengcloud.com,REJECT
+
+# > 极光推送统计
+# 注意：不可整体屏蔽 jpush.cn，否则 APP 推送功能失效，只拦统计子域
+DOMAIN-KEYWORD,stats.jpush,REJECT
+
+# > Google 广告
+# DoubleClick 广告投放
+DOMAIN-KEYWORD,doubleclick,REJECT
+
+
+# ─── 2.2 本次新增（源自代理日志1分析，共覆盖 50 个广告域名）─────────
+
+# > 早范广告 SDK —— 开屏广告主要来源，提供开屏/插屏/信息流广告
+DOMAIN-SUFFIX,hzzfcm.com,REJECT
+
+# > 杭州顺畅智行科技 —— 大数据精准定向广告投放，日志中请求量最高
+DOMAIN-SUFFIX,shunchangzhixing.com,REJECT
+
+# > Fancy 程序化广告平台（DSP 数据上报 / S2S 回传）
+DOMAIN-SUFFIX,fancyapi.com,REJECT
+DOMAIN-SUFFIX,fancydsp.com,REJECT
+
+# > 阿里汇川 / 神马搜索广告联盟
+DOMAIN-SUFFIX,sm.cn,REJECT
+
+# > 广告竞价监控（请求路径含 bid_id 竞价 ID）
+DOMAIN-SUFFIX,whmingshan.cn,REJECT
+
+# > appsad 广告曝光统计（广告位 ID 上报）
+DOMAIN-SUFFIX,appsad.cn,REJECT
+
+# > 领骏广告平台（SDK 配置 / 竞价 / 投放）
+DOMAIN-SUFFIX,lingjuad.com,REJECT
+
+# > AdWangmai 广告联盟 SDK
+DOMAIN-SUFFIX,adwangmai.com,REJECT
+
+# > 66mobi 广告联盟（追踪 / 腾讯 SSP / 静态素材）
+DOMAIN-SUFFIX,66mobi.com,REJECT
+
+# > statisticslinks 广告统计链路（数据统计 / 追踪 / ADX）
+DOMAIN-SUFFIX,statisticslinks.com,REJECT
+
+# > 清讯 SSP 广告供应方平台
+DOMAIN-SUFFIX,qingxuntech.cn,REJECT
+
+# > adparticle 广告曝光监测（/mantis?action=imp）
+DOMAIN-SUFFIX,adparticle.com,REJECT
+
+# > rayenergytech 广告曝光上报（/impression）
+DOMAIN-SUFFIX,rayenergytech.com,REJECT
+
+# > 新度广告追踪（/tk 追踪接口）
+DOMAIN-SUFFIX,xinduoad.com,REJECT
+
+# > spin-view 广告追踪上报
+DOMAIN-SUFFIX,spin-view.com,REJECT
+
+# > bytrabbit 广告追踪上报
+DOMAIN-SUFFIX,bytrabbit.com,REJECT
+
+# > maspiece 广告追踪上报
+DOMAIN-SUFFIX,maspiece.com,REJECT
+
+# > adbiding 广告竞价追踪（ad bidding）
+DOMAIN-SUFFIX,adbiding.cn,REJECT
+
+# > jizbmedia 广告曝光上报（/adx/pv）
+DOMAIN-SUFFIX,jizbmedia.com,REJECT
+
+# > zerunjiacheng 广告监测回传（/mr）
+DOMAIN-SUFFIX,zerunjiacheng.cn,REJECT
+
+# > divms 广告展示监测
+DOMAIN-SUFFIX,divms.cn,REJECT
+
+# > maplehaze SSP 广告供应方平台
+DOMAIN-SUFFIX,maplehaze.cn,REJECT
+
+# > 酷亮广告平台
+DOMAIN-SUFFIX,kuliangtech.cn,REJECT
+
+# > bwton 广告图片 CDN
+DOMAIN-SUFFIX,bwton.com,REJECT
+
+# > laiyagushi 广告落地页 / Open API
+DOMAIN-SUFFIX,laiyagushi.com,REJECT
+
+# > 以下为推广素材 CDN：本 APP 内仅用于渲染第三方广告图，整域拦截
+# > 美团推广素材 CDN（s3plus / p0）
+DOMAIN-SUFFIX,meituan.net,REJECT
+# > 拼多多推广素材与 DSP（images / t-dsp）
+DOMAIN-SUFFIX,pinduoduo.com,REJECT
+# > 快手推广素材（gdfp）
+DOMAIN-SUFFIX,gifshow.com,REJECT
+# > 优酷 DSP 推广（youku-dsp）
+DOMAIN-SUFFIX,youku-dsp.youku.com,REJECT
+# > 陌陌推广（ext）
+DOMAIN-SUFFIX,immomo.com,REJECT
+# > UC 信息流推广图片（image.uczzd）
+DOMAIN-SUFFIX,uczzd.cn,REJECT
+
+# > 以下为公共基础设施域名，整域拦截会误伤正常服务，故用精确域名匹配
+# > 阿里广告（ilce），alicdn.com 为公共 CDN，仅拦该子域
+DOMAIN,ilce.alicdn.com,REJECT
+# > 百度联盟（bgg），baidu.com 涉及面极广，仅拦该子域
+DOMAIN,bgg.baidu.com,REJECT
+# > 百度信息流推广图片，同理仅拦该子域
+DOMAIN,feed-image.baidu.com,REJECT
+
+
+# ─── 2.3 新增（源自代理日志2分析）─────────
+
+# > 腾讯 TDID 设备标识 —— 跨 APP 广告追踪的设备指纹服务
+# qq.com 涉及面极广，用精确匹配
+DOMAIN,tdid.m.qq.com,REJECT
+
+# > Adroom 广告平台事件上报（官网 dashisx.com 即 Adroom，主营广告投放）
+# 已查实整域为广告平台，故用 SUFFIX 整域拦截
+DOMAIN-SUFFIX,dashisx.com,REJECT
+
+# > 上海灵耶信息技术（api.shanghailingye.cn）
+# 性质未完全查明，按用户要求拦截；用精确匹配以降低误伤
+DOMAIN,api.shanghailingye.cn,REJECT
+
+
+# ─── 2.4 首页车场广告位（源自代理日志4/5 分析）─────────
+#
+# 广告数据接口：/yihao01-app-api/app/advert/listBySizeNew
+# 走官方主 API sapi.0easy.com，无法域名拦截。
+# v5.2 曾用 URL-REGEX + REJECT-200 直接拦截 —— 广告消失但 APP 报"网络异常"：
+# 空 body 无法被 APP 解析，无优雅降级。
+# v5.3 改用响应改写脚本（见 [Script] 段）：请求照常发出，响应返回后清空广告数据，
+# code/msg 等字段保持服务器原样，格式必然兼容。
