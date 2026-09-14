@@ -30,3 +30,13 @@ payload:
   - DOMAIN-SUFFIX,poe.com
   - DOMAIN-SUFFIX,perplexity.ai
   - DOMAIN-SUFFIX,pplx.ai
+
+  # Grok 相关
+  - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,grok.x.com
+  - DOMAIN-SUFFIX,x.ai
+  - DOMAIN-SUFFIX,grokusercontent.com
+  - DOMAIN-SUFFIX,grokipedia.com
+  - DOMAIN-SUFFIX,grok-sandbox.com
+  - DOMAIN-SUFFIX,groktpcontent.com
+  - DOMAIN-SUFFIX,groksupport.com
