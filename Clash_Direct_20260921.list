@@ -1,0 +1,173 @@
+# 自定义直连规则
+# 来源：shadowrocket_202609.conf
+# 生成日期：2026-09-12
+# 说明：Shadowrocket 的 pre-matching、extended-matching 参数已移除，原始备注全部保留
+
+# 酒店登录弹窗，测试
+IP-CIDR,1.1.1.3/32
+
+#  - - - - - - - - - - - - - - -
+# 自定义规则
+# 直连规则 (DIRECT)
+# 机场订阅
+
+DOMAIN-SUFFIX,todust.cc
+# 证书吊销状态查询（OCSP）- 必须直连以保障握手速度
+DOMAIN-SUFFIX,digicert.com
+# > 腾讯云对象存储（资源分发，必须直连以保证加载速度）
+DOMAIN-SUFFIX,tencentcos.cn
+# > 阿里移动调度中心 必须直连保障手淘、闲鱼启动速度
+IP-CIDR,47.246.103.0/24,no-resolve
+IP-CIDR,203.119.144.0/20,no-resolve
+IP-CIDR,106.11.0.0/16,no-resolve
+DOMAIN-SUFFIX,alibabachengdun.com
+# > NTP 官方时间服务池直连
+DOMAIN-SUFFIX,ntp.org
+DOMAIN,ntp.nasa.gov
+# CDN服务，将 Fastly 核心节点全部直连
+DOMAIN-SUFFIX,fastly-edge.com
+DOMAIN-SUFFIX,fastly.net
+DOMAIN-SUFFIX,fastlylb.net
+# 喷梯网直连（保障国内网站加载速度）
+DOMAIN-SUFFIX,dapenti.com
+# 途虎养车官方网站、App 数据同步与静态资源直连（保障国内服务访问速度）
+DOMAIN-SUFFIX,tuhu.com
+DOMAIN-SUFFIX,tuhu.org
+# 群晖（Synology）官方主站、QuickConnect 与 DSM 系统服务直连（保障 NAS 远程连接与套件下载速度）
+DOMAIN-SUFFIX,synology.com
+DOMAIN-SUFFIX,synology.cn
+# jsDelivr 开源 CDN 及相关核心/节点域名直连（保障全套服务与静态资源加载）
+DOMAIN-SUFFIX,jsdelivr.net
+DOMAIN-SUFFIX,jsdelivr.com
+DOMAIN-SUFFIX,jsdmirror.com
+# 中国石油（PetroChina）客服及加油 App 官方接口直连
+DOMAIN-SUFFIX,95504.net
+DOMAIN-SUFFIX,kunlunjyk.com
+# 钱迹, 直连
+DOMAIN-SUFFIX,qianjiapp.com
+DOMAIN-SUFFIX,qianji.app
+DOMAIN-SUFFIX,litangkj.com
+# ZA, 直连
+DOMAIN-SUFFIX,za.group
+DOMAIN-SUFFIX,zajourney.com
+DOMAIN-SUFFIX,zaticdn.com
+DOMAIN-SUFFIX,zainvest.group
+# （小众软件，黄集伟）, 直连
+DOMAIN-SUFFIX,appinn.me
+DOMAIN-SUFFIX,www.huangjiwei.com
+
+# 国内三大运营商 IPv6 骨干网段强制直连（防止 GeoIP 未收录时下坠到 FINAL）
+IP-CIDR6,2400::/12
+IP-CIDR6,2403::/12
+IP-CIDR6,240E::/12
+IP-CIDR6,2409::/12
+
+# Common Direct
+# 提取自 blackmatrix7 Direct.list 规则明细
+DOMAIN-SUFFIX,126.net
+DOMAIN-SUFFIX,126.com
+DOMAIN-SUFFIX,163.com
+DOMAIN-SUFFIX,alibaba.com
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,aliyun.com
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,cctv.com
+DOMAIN-SUFFIX,douyu.com
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,iqiyi.com
+DOMAIN-SUFFIX,kuaishou.com
+DOMAIN-SUFFIX,meituan.com
+DOMAIN-SUFFIX,netease.com
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,sina.com.cn
+DOMAIN-SUFFIX,sohu.com
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,tencent.com
+DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,youku.com
+DOMAIN-SUFFIX,zhihu.com
+DOMAIN-SUFFIX,cn
+
+# 提取自 wiihunting viaDirect.list 规则明细 (NAS等)
+# NAS
+DOMAIN-SUFFIX,jiang11.space
+DOMAIN-SUFFIX,chinatax.gov.cn
+DOMAIN-SUFFIX,quickconnect.cn
+DOMAIN-SUFFIX,gaode.com
+DOMAIN-SUFFIX,amap.com
+DOMAIN-SUFFIX,kdocs.cn
+DOMAIN-SUFFIX,aliapp.org
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,alipayobjects.com
+DOMAIN-SUFFIX,uc.cn
+DOMAIN-SUFFIX,ucweb.com
+# 小宇宙相关
+DOMAIN-SUFFIX,xyzcdn.net
+DOMAIN-SUFFIX,xiaoyuzhoufm.com
+DOMAIN-SUFFIX,wavpub.com
+DOMAIN-SUFFIX,stovol.club
+
+# 提取自 wiihunting WeChatClash202503.list 规则明细 (微信)
+# NAME: WeChat
+DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
+DOMAIN,btrace.qq.com
+DOMAIN,dldir1.qq.com
+DOMAIN,slife.xy-asia.com
+DOMAIN,soup.v.qq.com
+DOMAIN,vweixinf.tc.qq.com
+DOMAIN,weixin110.qq.com
+DOMAIN,wup.imtt.qq.com
+DOMAIN-SUFFIX,iot-tencent.com
+DOMAIN-SUFFIX,lbs.gtimg.com
+DOMAIN-SUFFIX,map.qq.com
+DOMAIN-SUFFIX,qlogo.cn
+DOMAIN-SUFFIX,qpic.cn
+DOMAIN-SUFFIX,servicewechat.com
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,up-hl.3g.qq.com
+DOMAIN-SUFFIX,vweixinthumb.tc.qq.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,wechatlegal.net
+DOMAIN-SUFFIX,wechatos.net
+DOMAIN-SUFFIX,wechatpay.com
+DOMAIN-SUFFIX,weixin.com
+DOMAIN-SUFFIX,weixin.qq.com
+DOMAIN-SUFFIX,weixinbridge.com
+DOMAIN-SUFFIX,weixinsxy.com
+DOMAIN-SUFFIX,wx.gtimg.com
+DOMAIN-SUFFIX,wx.qq.com
+DOMAIN-SUFFIX,wxapp.tc.qq.com
+DOMAIN-SUFFIX,wxs.qq.com
+DOMAIN-SUFFIX,yun-hl.3g.qq.com
+IP-CIDR,101.32.104.4/32,no-resolve
+IP-CIDR,101.32.104.41/32,no-resolve
+IP-CIDR,101.32.104.56/32,no-resolve
+IP-CIDR,101.32.118.25/32,no-resolve
+IP-CIDR,101.32.133.16/32,no-resolve
+IP-CIDR,101.32.133.209/32,no-resolve
+IP-CIDR,101.32.133.53/32,no-resolve
+IP-CIDR,129.226.107.244/32,no-resolve
+IP-CIDR,129.226.3.47/32,no-resolve
+IP-CIDR,162.62.163.63/32,no-resolve
+IP-CIDR,43.156.222.0/24,no-resolve
+IP-ASN,132203,no-resolve
+
+# 京东 (JD) 直连规则
+DOMAIN-SUFFIX,360buy.com
+DOMAIN-SUFFIX,360buyimg.com
+DOMAIN-SUFFIX,jcloudcs.com
+DOMAIN-SUFFIX,jd.hk
+DOMAIN-SUFFIX,jdcloud.com
+DOMAIN-SUFFIX,jdpay.com
+DOMAIN-SUFFIX,paipai.com
+
+# 混合规则分组 (保留不拆分)
+# 按用户要求拆分到直连类别
+# Cloudflare
+DOMAIN-SUFFIX,cloudflare.com
+# mapbox
+DOMAIN-KEYWORD,mapbox
